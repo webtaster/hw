@@ -10,8 +10,12 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: hw.sh
-  displayName: 'Run a one-line script'
+- bash: hw.sh
+  workingDirectory: #
+  displayName: Run script from Github
+  failOnStderr: #
+  env:  # mapping of environment variables to add
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.

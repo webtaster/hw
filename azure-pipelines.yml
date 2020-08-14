@@ -11,10 +11,10 @@ pool:
 
 steps:
 - bash: hw.sh
-  workingDirectory: 
-  displayName: Run script from Github
-  failOnStderr: 
-  env:
+  #workingDirectory: 
+  #displayName: Run script from Github
+  #failOnStderr: 
+  #env:
 
 
 - script: |

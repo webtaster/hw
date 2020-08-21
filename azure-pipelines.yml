@@ -18,12 +18,12 @@ steps:
   #failOnStderr: 
   #env:
 
-- task: PublishBuildArtifacts@1
+- task: ArchiveFiles@1
+  displayName: "Archive script"
   inputs:
-     PathtoPublish: '$(System.DefaultWorkingDirectory)'
-     ArtifactName: 'drop'
-     publishLocation: 'filePath'
-     TargetPath: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
+    archiveFile: $(BuildArtifactStagingDirectory)/source.zip
+     
      
 - script: |
     echo Add other tasks to build, test, and deploy your project.

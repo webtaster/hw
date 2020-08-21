@@ -24,7 +24,8 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)/hw.sh'
     includeRootFolder: false
     archiveFile: '$(System.DefaultWorkingDirectory)/source.zip'
-    replaceExistingArchive: true 
+    replaceExistingArchive: true
+    archiveType: 'zip'
      
      
 - script: |

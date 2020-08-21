@@ -18,7 +18,12 @@ steps:
   #failOnStderr: 
   #env:
 
-
+- task: PublishBuildArtifacts@1
+  inputs:
+     PathtoPublish: '$(System.DefaultWorkingDirectory)'
+     ArtifactName: 'drop'
+     publishLocation: 'filePath'
+     
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml

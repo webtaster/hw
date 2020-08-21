@@ -23,6 +23,7 @@ steps:
      PathtoPublish: '$(System.DefaultWorkingDirectory)'
      ArtifactName: 'drop'
      publishLocation: 'filePath'
+     TargetPath: '$(System.DefaultWorkingDirectory)'
      
 - script: |
     echo Add other tasks to build, test, and deploy your project.

@@ -22,7 +22,7 @@ steps:
   displayName: "Archive script"
   inputs:
     includeRootFolder: false
-    archiveFile: source.zip
+    archiveFile: $(Build.ArtifactStagingDirectory)/source.zip
      
      
 - script: |

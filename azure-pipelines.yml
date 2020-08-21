@@ -21,8 +21,10 @@ steps:
 - task: ArchiveFiles@1
   displayName: "Archive script"
   inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/hw.sh'
     includeRootFolder: false
-    archiveFile: $(Build.ArtifactStagingDirectory)/source.zip
+    archiveFile: '$(System.DefaultWorkingDirectory)/source.zip'
+    replaceExistingArchive: true 
      
      
 - script: |
